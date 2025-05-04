@@ -1,5 +1,7 @@
 <?php
-$conn = new mysqli('localhost', 'root', 'your_root_password', 'imageboard');
+// I aint showing my database credentials 
+// Either way ts aint even being used 
+$conn = new mysqli(');
 
 $id = (int)($_GET['id'] ?? 0);
 $result = $conn->query("SELECT image, image_name FROM posts WHERE id = $id");
