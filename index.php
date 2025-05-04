@@ -1,6 +1,7 @@
 <?php
 session_start();
-$conn = new mysqli("localhost", "root", "elm600.root", "imageboard");
+// I think you get the point
+$conn = new mysqli
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
