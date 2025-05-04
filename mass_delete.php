@@ -4,7 +4,7 @@ if (!isset($_SESSION['admin']) || $_SESSION['admin'] !== true) {
     die("Access denied");
 }
 
-$conn = new mysqli("localhost", "root", "elm600.root", "imageboard");
+$conn = new mysqli
 if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
 
 // Check if it's a range delete
