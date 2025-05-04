@@ -1,9 +1,8 @@
 <?php
 session_start();
- //Optional: Check if user is admin
-// if (!isset($_SESSION['is_admin']) || !$_SESSION['is_admin']) die("Unauthorized.");
+ 
 
-$conn = new mysqli("localhost", "root", "elm600.root", "imageboard");
+$conn = new mysqli("", "", "", "");
 if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
 
 $shortname = strtolower(trim($_POST['shortname']));
