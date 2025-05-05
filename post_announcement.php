@@ -4,7 +4,7 @@ if (!isset($_SESSION['admin'])) {
     header("Location: admin_login.php");
     exit;
 }
-$conn = new mysqli("localhost", "root", "elm600.root", "imageboard");
+//Trust the process 
 if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
 
 $msg = $_POST['message'];
