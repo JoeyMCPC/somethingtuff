@@ -3,7 +3,7 @@
 $board = $_GET['b'] ?? 'main';
 
 // Connect to the database
-$conn = new mysqli("localhost", "root", "elm600.root", "imageboard");
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
